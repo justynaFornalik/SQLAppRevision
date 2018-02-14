@@ -11,11 +11,11 @@ import java.util.List;
 
 public class ApplicantDaoSQLite implements ApplicantDao {
 
-    private DbConnection database = DbConnection.getInstance();
+    private DbConnection dbConnection = DbConnection.getInstance();
     private Connection connection;
 
     public ApplicantDaoSQLite(){
-        this.connection = database.getConnection();
+        connection = dbConnection.getConnection();
     }
 
     public List<Applicant> selectFullName() throws SQLException {

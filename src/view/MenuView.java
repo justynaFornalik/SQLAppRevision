@@ -20,6 +20,7 @@ public class MenuView {
     }
 
     public String getInput(String message){
+        printMessage(message);
         Scanner scanner = new Scanner(System.in);
         String input =scanner.next();
         return input;

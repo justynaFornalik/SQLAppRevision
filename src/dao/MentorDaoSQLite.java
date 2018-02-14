@@ -11,11 +11,12 @@ import java.util.List;
 
 public class MentorDaoSQLite implements MentorDao{
 
-    private DbConnection database = DbConnection.getInstance();
+    private DbConnection dbConnection = DbConnection.getInstance();
     private Connection connection;
 
     public MentorDaoSQLite(){
-        connection = database.getConnection();
+
+        connection = dbConnection.getConnection();
     }
 
     private List<Mentor> fillResultList(ResultSet queryResult) throws SQLException {
