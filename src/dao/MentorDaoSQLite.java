@@ -14,7 +14,7 @@ public class MentorDaoSQLite implements MentorDao{
     private DbConnection database = DbConnection.getInstance();
     private Connection connection;
 
-    MentorDaoSQLite(){
+    public MentorDaoSQLite(){
         connection = database.getConnection();
     }
 
