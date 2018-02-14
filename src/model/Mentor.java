@@ -1,7 +1,5 @@
 package model;
 
-import dao.MentorDao;
-
 public class Mentor extends Person{
 
     String nickName;
