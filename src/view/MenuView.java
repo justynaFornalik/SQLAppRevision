@@ -15,7 +15,7 @@ public class MenuView {
         + "(6) Insert applicant\n"
         + "(7) Update phone number\n"
         + "(8) Delete applicant\n"
-        + "(9) Exit");
+        + "(0) Exit");
 
     }
 
