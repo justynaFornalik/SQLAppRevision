@@ -18,7 +18,7 @@ public class MentorDaoSQLite implements MentorDao{
         connection = database.getConnection();
     }
 
-    private List<Mentor> fillResultList(ResultSet queryResult) {
+    private List<Mentor> fillResultList(ResultSet queryResult) throws SQLException {
         List<Mentor> mentors = new ArrayList<>();
 
         while(queryResult.next()) {
