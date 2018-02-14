@@ -25,7 +25,7 @@ public class MentorDaoSQLite implements MentorDao{
             String firstName = queryResult.getString("first_name");
             String lastName = queryResult.getString("last_name");
 
-            Mentor newMentor = new Mentor();
+            Mentor newMentor = new Mentor(firstName, lastName);
             mentors.add(newMentor);
         }
 
