@@ -7,6 +7,10 @@ public class Applicant extends Person {
         super(firstName, lastName);
     }
 
+    public Applicant(String firstName, String lastName, String phoneNumber) {
+        super(firstName, lastName, phoneNumber);
+    }
+
     public Applicant(String firstName, String lastName, String phoneNumber, String email, int applicationCode) {
         super(firstName, lastName, phoneNumber, email);
         this.applicationCode = applicationCode;
