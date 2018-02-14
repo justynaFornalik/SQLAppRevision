@@ -8,7 +8,7 @@ public final class DbConnection {
     private Connection connection = null;
     private final String DBNAME = "jdbc:sqlite:db.db";
 
-    private static DbConnection getInstance(){
+    public static DbConnection getInstance(){
         if(instance == null){
             instance = new DbConnection();
         }
